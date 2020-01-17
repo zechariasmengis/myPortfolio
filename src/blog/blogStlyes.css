@@ -1,5 +1,5 @@
 .main-container {
-    border: 1px solid black;
+    border: 1px solid orange;
     height: 100%;
 }
 .post-title {
@@ -36,4 +36,10 @@ main {
     height: 100%;
     margin: 0 auto;
 }
-
+section {
+    border: 1px solid black;
+}
+footer {
+    background-color: blue;
+    height: 100px;
+}
