@@ -1,0 +1,36 @@
+.main-container {
+    border: 1px solid black;
+}
+.post-title {
+    font-size: 30px;
+    
+}
+.post-subtitle {
+    color: gray;
+}
+nav {
+    height: 40px;
+    width: 100%;
+    border: 1px solid blue;
+    background-color: blue;
+    text-align: right;
+    line-height: 1;
+    margin: auto;
+}
+a {
+ margin: auto;
+ width: 50%;
+ height: 40px;
+ border: 3px solid green;
+ padding: 8px;
+}
+i {
+    width: 2px;
+    border: 1px solid brown;
+    border-radius: 50%;
+}
+main {
+    width: 80%;
+    border: 1px solid pink;
+}
+
