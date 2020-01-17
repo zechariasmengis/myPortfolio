@@ -1,5 +1,6 @@
 .main-container {
     border: 1px solid black;
+    height: 100%;
 }
 .post-title {
     font-size: 30px;
@@ -32,5 +33,7 @@ i {
 main {
     width: 80%;
     border: 1px solid pink;
+    height: 100%;
+    margin: 0 auto;
 }
 
