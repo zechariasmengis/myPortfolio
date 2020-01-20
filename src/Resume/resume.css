@@ -21,3 +21,10 @@ ul {
   li a:hover {
     background-color: #00B2A9;
   }
+  .resume-title {
+      text-align: center;
+      padding: 50px;
+  }
+  h2 li a {
+      color: green;
+  }
