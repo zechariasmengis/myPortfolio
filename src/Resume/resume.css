@@ -6,11 +6,11 @@ ul {
     background-color: #C8102E;
   }
   
-  li {
+  ul li {
     float: left;
   }
   
-  li a {
+  ul li a {
     display: block;
     color: white;
     text-align: center;
@@ -18,7 +18,7 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover {
+  ul li a:hover {
     background-color: #00B2A9;
   }
 
@@ -153,12 +153,10 @@ ul {
       text-align: left;
       padding: 50px;
   }
-  h2 li a {
-      color: green;
-  }
+
   .resume-top-section {
       border: 1px solid blue;
-      height: 350px;
+      height: 250px;
   }
   
   .resume-top-left {
@@ -166,3 +164,18 @@ ul {
       width: 25%;
       border: 1px solid green;
   }
+  
+.contact-info {
+    text-align: left;
+    padding: 0px 0px 0px 50px;
+}
+
+.resume-body {
+    border: 1px solid yellow;
+    height: 1000px;
+}
+
+.resume-left {
+    height: 100%;
+    width: 25%;
+    border: 1px solid purple;
