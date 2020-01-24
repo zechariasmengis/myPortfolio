@@ -6,11 +6,11 @@ ul {
     background-color: #C8102E;
   }
   
-  ul li {
+ul li {
     float: left;
   }
   
-  ul li a {
+ul li a {
     display: block;
     color: white;
     text-align: center;
@@ -18,11 +18,11 @@ ul {
     text-decoration: none;
   }
   
-  ul li a:hover {
+ul li a:hover {
     background-color: #00B2A9;
   }
 
-  .hero-image {
+.hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("trent-corner-taken-quickly.jpg");
     height: 115%;
     background-position:bottom;
@@ -31,7 +31,7 @@ ul {
     position: relative;
   }
   
-  .hero-text {
+.hero-text {
     text-align: center;
     position: absolute;
     top: 40%;
@@ -40,7 +40,7 @@ ul {
     color: white;
   }
   
-  .hero-text button {
+.hero-text button {
     border: none;
     outline: 0;
     display: inline-block;
@@ -55,65 +55,56 @@ ul {
     width: 300px;
   }
   
-  .hero-text button:hover {
+.hero-text button:hover {
     background-color: #555;
     color: white;
   }
   
-  body div h1 {
+body div h1 {
     color: #00B2A9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
-  body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg);
-      background-repeat: no-repeat;
-      background-size: 1600px 1000px;
-      width: 100vw;
-      height: 100vh;
-    }
    
-    .logo {
+.logo {
       width: 150px;
       height: 100px;
       margin: 3% 10%;
     }
    
-    main {
+main {
       height: auto;
       width: 100%;
       display: grid;
     }
    
-    .has-border {
+.has-border {
       border-radius: 25px;
       border: 2px solid #0795C3;
       background: none;
       padding: 20px;
     }
    
-    nav {
+nav {
       display: flex;
       justify-content: flex-end;
       width: 100%;
       padding-right: 2%;
     }
    
-    h2 {
+h2 {
       grid-column: 2/3;
       margin: 3% auto;
       font-style: italic;
     }
    
-    .small-text {
+.small-text {
       grid-column: 2/3;
       color: white;
       font-size: 10px;
       margin: 3% auto;
     }
    
-    button {
+button {
       grid-column: 2/3;
       margin: 3% auto;
       width: 70%;
@@ -129,7 +120,8 @@ ul {
       letter-spacing: 16px;
       font-style: italic;
     }
-    .footer {
+
+.footer {
       left: 0;
       bottom: 0;
       width: 100%;
@@ -139,27 +131,27 @@ ul {
       text-align: center;
    } 
    
-   .information {
+.information {
      height: 1000px;
    }
   
-   .information h1 {
+.information h1 {
      color: black;
      text-align: center;
   
    }
-
-  .resume-title {
+   
+.resume-title {
       text-align: left;
       padding: 50px;
   }
 
-  .resume-top-section {
+.resume-top-section {
       border: 1px solid blue;
       height: 250px;
   }
   
-  .resume-top-left {
+.resume-top-left {
       height: 100%;
       width: 25%;
       border: 1px solid green;
@@ -179,3 +171,4 @@ ul {
     height: 100%;
     width: 25%;
     border: 1px solid purple;
+}
