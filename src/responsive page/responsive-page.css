@@ -5,9 +5,10 @@ body {
 }
 
 .story-box {
-    width: 60%;
+    width: 65%;
     border: 1px solid purple;
     display: inline-block;
+    padding: 0 0 10px 0;
 }
 
 .story-image {
@@ -20,15 +21,53 @@ body {
 }
 
 .top-stories-bar {
-    border: 1px solid green;
     height: 400px;
     width: 20%;
-    display: inline-block;
     float: right;
+    margin: 5px 0 0 0;
 }
+
+.top-stories-bar h1 {
+    font-weight: bold;
+    padding: 5px 0 0 5px;
+}
+
+.top-stories-bar hr {
+    border: .5px solid black;
+    width: 50%;
+    text-align: left;
+    margin-left: 0px;
+}
+
+#title-line {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.top-stories-bar p {
+    padding: 5px 0 0 5px;
+    line-height: 30px;
+}
+
 .story-title {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5em;
+    padding: 0 10px 0 10px;
+}
+
+.story-blurb {
+    font-family: 'Open Sans', sans-serif;
+    opacity: 70%;
+    padding: 0 10px 0 10px;
+}
+
+.story-tag-box {
+    margin: 0 10px 0 10px;
+    border: 1px solid gray;
+    width: min-content;
+    background-color: gray;
+    text-align: center;
+    padding: 3px 3px 3px 3px;
 }
 
 @media (max-width: 992px) {
