@@ -4,8 +4,14 @@ body {
     padding: 0px 0px 100px 0px;
 }
 
-.story-image {
+.story-box {
     width: 60%;
+    border: 1px solid purple;
+    display: inline-block;
+}
+
+.story-image {
+    width: 100;
     display: inline-block;
 }
 
@@ -30,9 +36,29 @@ body {
     .top-stories-bar {
         display: none;
     }
-    .story-image {
+
+    .story-box {
         width: 80%;
+    }
+    .story-image {
+        width: 100%;
     }
 
     
+}
+
+@media (max-width: 576px) {
+
+    .top-stories-bar {
+        display: none;
+    }
+
+    .story-box {
+        width: 100%;
+    }
+
+    .story-image {
+        width: 100%;
+    }
+
 }
