@@ -4,68 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="blogReset.css">
+    <link rel="stylesheet" href="../../reset.css">
     <link rel="stylesheet" href="blog.css">
     <title>Blog</title>
 </head>
 <body>
-    <div class="main-container">
-        <header></header>
-        <nav>
-            <i id="nav-logo">Yo</i>
-            <a href="/index.html">Home</a>
-            <a>Flip</a>
-            <a>Dip</a>
-        </nav>
-        <main>
-            <div class="blog-title">
-                <h1>Zech's Blog</h1>
-                <p>Welcome to Zech's unbelievable blog. This blog is unbelievable.</p>
+
+    <!-- This is the nav -->
+
+    <ul>
+        <li><a href="../../index.html" >Home</a></li>
+        <li><a class="#Resume" href="../Resume/resume.html"> Resume</a></li>
+        <li><a href="../AboutMe/AboutMe.html"> About Me</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li style="float:right"><a href="mailto:zmengis@gmail.com" target="_blank">Contact Me</a></li>
+      </ul>
+
+<!-- This is the start of the hero image and text that's included in it -->
+
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 class="blog-hero-title">Zech's Blog</h1>
+          <p class="blog-hero-subheader">Welcome to Zech's unbelievable blog. This blog is unbelievable.</p>
+        </div>
+      </div>
+
+<!-- This is going to be the first story in the blog. It's detached from the rest of the blog
+because the "Top Stories" section below is going to be attached to it -->
+
+    <div class="story-box">
+        <div class="story-image">
+        <img src="../../anfield-seats.jpg" alt="Anfield stadium seats">
+        </div>
+        <div class="story-preview">
+         <div class="story-title">
+            Liverpool Football Club are Unbeatable
             </div>
-            <section>
-                <p class="post-title">10 Reasons Trent Alexander-Arnold is the Best Right Back in the World</p>
-                <p class="post-subtitle">The Scouser in Our Team</p>
-                <p class="post-date">January 16, 2020</p>
-                <p class="post-preview">Trent Alexander-Arnold is redefining the right back position at the age of 21. Here are 10 reasons why he is already the best in the world in his position:</p>
-            </section>
-            <section>
-                    <p class="post-title">Zech's Favorite Travel Destinations: London</p>
-                    <p class="post-subtitle">The Scouser in Our Team</p>
-                    <p class="post-date">January 16, 2020</p>
-                    <p class="post-preview">Trent Alexander-Arnold is redefining the right back position at the age of 21. Here are 10 reasons why he is already the best in the world in his position:</p>
-            </section>
-            <section>
-                    <p class="post-title">Zech's Favorite Travel Destinations: Rome</p>
-                    <p class="post-subtitle">The Scouser in Our Team</p>
-                    <p class="post-date">January 16, 2020</p>
-                    <p class="post-preview">Trent Alexander-Arnold is redefining the right back position at the age of 21. Here are 10 reasons why he is already the best in the world in his position:</p>
-            </section>
-            <section>
-                    <p class="post-title">Zech's Favorite Travel Destinations: Scotland</p>
-                    <p class="post-subtitle">The Scouser in Our Team</p>
-                    <p class="post-date">January 16, 2020</p>
-                    <p class="post-preview">Trent Alexander-Arnold is redefining the right back position at the age of 21. Here are 10 reasons why he is already the best in the world in his position:</p>
-            </section>
-            <section>
-                    <p class="post-title">Zech's Favorite Travel Destinations: New York City</p>
-                    <p class="post-subtitle">The Scouser in Our Team</p>
-                    <p class="post-date">January 16, 2020</p>
-                    <p class="post-preview">Trent Alexander-Arnold is redefining the right back position at the age of 21. Here are 10 reasons why he is already the best in the world in his position:</p>
-            </section>
-            <section>
-                    <p class="post-title">10 Reasons Trent Alexander-Arnold is the Best Right Back in the World</p>
-                    <p class="post-subtitle">The Scouser in Our Team</p>
-                    <p class="post-date">January 16, 2020</p>
-                    <p class="post-preview">Trent Alexander-Arnold is redefining the right back position at the age of 21. Here are 10 reasons why he is already the best in the world in his position:</p>
-            </section>
-            <section>
-                    <p class="post-title">10 Reasons Trent Alexander-Arnold is the Best Right Back in the World</p>
-                    <p class="post-subtitle">The Scouser in Our Team</p>
-                    <p class="post-date">January 16, 2020</p>
-                    <p class="post-preview">Trent Alexander-Arnold is redefining the right back position at the age of 21. Here are 10 reasons why he is already the best in the world in his position:</p>
-            </section>
-        </main>
-        <footer>Yolo</footer>
+            <br>
+         <p class="story-blurb">Liverpool Football Club recently surpassed 40 games unbeaten in the Premier League – extending their best-ever start to a top flight campaign in the history of Europe's top 5 leagues. The question is: can this team be beaten?</p>
+           <br> 
+         <div class="story-tag-box">
+                Soccer
+            </div>
+        </div>
+    </div> 
+
+    <!-- This is the top stories section that's going to be offset to the right in dekstop view.
+    But it's going to disappear when shrunk to iPad/mobile view. -->
+
+    <div class="top-stories-bar">
+        <h1>TOP STORIES</h1>
+        <hr id="title-line">
+        <p>Is Georginio Wijnaldum the Most Adaptable CM in the world?</p>
+        <hr>
+        <P>Jurgen Klopp's Top Secret Haircare Routine Revealed</P>
+        <hr>
+        <P>Is Timo Werner Bound for LFC This Summer?</P>
+        <hr>
+        <P>Tactial Analysis: Liverpool v Wolves</P>
+        <hr>
+        <P>Top Story 5</P>
     </div>
+
+<!-- This is the rest of the body of the blog -->
+
+    <div class="story-box">
+        <div class="story-image">
+        <img src="../../anfield-seats.jpg" alt="Anfield stadium seats">
+        </div>
+        <div class="story-preview">
+         <div class="story-title">
+            Liverpool Football Club are Unbeatable
+            </div>
+            <br>
+         <p class="story-blurb">Liverpool Football Club recently surpassed 40 games unbeaten in the Premier League – extending their best-ever start to a top flight campaign in the history of Europe's top 5 leagues. The question is: can this team be beaten?</p>
+           <br> 
+         <div class="story-tag-box">
+                Soccer
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+   
+   
+    <footer class="container">
+        <section class="footer-title-left"> Useful Links</section>
+        <section class="footer-title-right">Social Media</section>
+        <section class="useful-links-list">
+            <ul>Liverpool Players</ul>
+            <hr>
+            <ul>Zech's Writing</ul>
+            <hr>
+            <ul>The GOAT Corner</ul>
+            <hr>
+            <ul>About Me</ul>
+            <hr>
+            <ul>Home</ul>
+        </section>
+        <section class="social-media-list">
+            <ul>Twitter</ul>
+            <hr>
+            <ul>Facebook</ul>
+            <hr>
+            <ul>Instagram</ul>
+            <hr>
+            <ul>Youtube</ul>
+            <hr>
+            <ul>LFC Website</ul>
+        </section>
+    </footer>
 </body>
 </html>
