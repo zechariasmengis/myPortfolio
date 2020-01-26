@@ -70,6 +70,13 @@ body {
     padding: 3px 3px 3px 3px;
 }
 
+/* For the footer I'm making this page desktop-first and making it not display at any size larger than mobile */
+/* I'm going to be styling the footer in my media queries */
+
+footer {
+    display: none;
+}
+
 @media (max-width: 992px) {
     
     .top-stories-bar {
@@ -81,9 +88,7 @@ body {
     }
     .story-image {
         width: 100%;
-    }
-
-    
+    }   
 }
 
 @media (max-width: 576px) {
@@ -98,6 +103,23 @@ body {
 
     .story-image {
         width: 100%;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50px 200px;
+        background-color:  #C8102E;
+    }
+    .container hr {
+        width: 50%;
+        text-align: left;
+        margin-left: 0px;
+    }
+    
+    .footer-title-left {
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
 
 }
