@@ -1,16 +1,16 @@
-body {
+.container {
   display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 46px 300px 1000px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr;
   grid-template-areas:
-    "nav nav"
     "info summary"
     "skills history"
   ;
+  grid-auto-rows: minmax(1fr Auto);
+  
 }
 
 ul {
-    grid-area: nav;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -34,18 +34,33 @@ ul li a:hover {
     background-color: #00B2A9;
   }
    
-.resume-title {
+#resume-name {
       text-align: left;
       font-family: 'Bebas Neue', sans-serif;
       color: #00B2A9;
-      font-size: 40px;
+      font-size: 2em;
       padding: 20px 0 0 20px;
   }
   
 .resume-top-left {
-      grid-area: "summary";
+      display: grid;
+      grid-template-rows: 50% 50%;
+      background: #eee;
   }
 
   .resume-top-right {
-    grid-area: "info";
+    display: grid;
+    grid-template-rows: 40% 60%;
+  }
+
+  .resume-section-title {
+    margin: 20px 0 0 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+  }
+
+  @media (max-width: 768px) {
+    .resume-top-left {
+      background: green;
+    }
   }
