@@ -23,7 +23,7 @@ ul {
   }
   
   .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("trent-corner-taken-quickly.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../360-overlook.jpg");
     height: 115%;
     background-position:bottom;
     background-repeat: no-repeat;
@@ -38,6 +38,13 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+  }
+
+  #hero-title {
+    padding: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #00B2A9;
+    font-size: 2.5em;
   }
   
   .hero-text button {
