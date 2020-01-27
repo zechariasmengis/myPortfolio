@@ -1,16 +1,15 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 350px auto;
+  grid-template-rows: minmax(350px, Auto) minmax(500px, Auto);
   grid-template-areas:
     "info summary"
     "skills history"
   ;
-  grid-auto-rows: minmax(1fr Auto);
   
 }
 
-ul {
+ul.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -18,11 +17,11 @@ ul {
     background-color: #C8102E;
   }
   
-ul li {
+ul.nav li {
     float: left;
   }
   
-ul li a {
+ul.nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -30,8 +29,16 @@ ul li a {
     text-decoration: none;
   }
   
-ul li a:hover {
+ul.nav li a:hover {
     background-color: #00B2A9;
+  }
+
+  ul.icon {
+    list-style-type: none;
+  }
+  
+  ul.icon li {
+   
   }
    
 #resume-name {
@@ -44,13 +51,28 @@ ul li a:hover {
   
 .resume-top-left {
       display: grid;
-      grid-template-rows: 50% 50%;
+      grid-template-rows: 35% 65%;
       background: #eee;
+  }
+
+  .contact-info {
+    /* margin-left: 10px; */
+    padding-left: 20px;
+    line-height: 30px;
   }
 
   .resume-top-right {
     display: grid;
     grid-template-rows: 40% 60%;
+    background: #ddd;
+  }
+
+  .resume-bottom-left {
+    background: #ccc;
+  }
+
+  .resume-bottom-right {
+    background: #bbbbbb;
   }
 
   .resume-section-title {
@@ -60,6 +82,8 @@ ul li a:hover {
   }
 
   @media (max-width: 768px) {
+    
+
     .resume-top-left {
       background: green;
     }
