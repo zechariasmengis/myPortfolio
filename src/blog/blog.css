@@ -1,63 +1,181 @@
-.main-container {
-    border: 1px solid orange;
-    height: 100%;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #C8102E;
 }
-.post-title {
-    font-size: 30px;   
-}
-.post-subtitle {
-    color: gray;
-}
-nav {
-    height: 40px;
-    width: 100%;
-    border: 1px solid blue;
-    background-color: blue;
-    text-align: right;
-    line-height: 1;
-    margin: auto;
-}
-a {
- margin: auto;
- width: 50%;
- height: 40px;
- border: 3px solid green;
- padding: 8px;
-}
-i {
-    width: 40px;
-    height: 40px;
-    border: 1px solid brown;
-    border-radius: 50%;
-    margin: 5px;
-
-}
-main {
-    width: 80%;
-    border: 1px solid pink;
-    height: 100%;
-    margin: 0 auto;
-    padding: 100px;
-}
-section {
-    border: 1px solid black;
-}
-footer {
-    background-color: blue;
-    height: 100px;
-}
-.blog-title h1 {
-    border: 1px solid yellow;
-    text-align: center;
-    font-size: 50px;
-    margin: 0px 50px 50px 50px;
-}
-.blog-title p {
-    text-align: center;
-    margin: -30px 0px 50px 0px;
-}
-#nav-logo {
+  
+li {
     float: left;
+}
+  
+li a {
+    display: block;
     color: white;
-    margin: 0 auto;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #00B2A9;
+}
+  
+.hero-image {
+    grid-template-columns: 1/3 1/3 1/3;
+    grid-template-rows: 1/3 1/3 1/3;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../trent-corner-taken-quickly.jpg");
+    height: 115vh;
+    background-position: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-bottom: 1px solid green;
+}
+  
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.blog-hero-title {
+    padding: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #00B2A9;
+    font-size: 2.5em;
+    padding: 0 10px 0 10px;
+}
+
+.blog-hero-subheader {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: inline-block;
+    padding: 0px 0px 100px 0px;
+}
+
+.story-box {
+    width: 65%;
+    display: inline-block;
+    padding: 0 0 50px 0;
+}
+
+.story-image {
+    width: 100;
+    display: inline-block;
+}
+
+.story-image img {
+    width: 100%;
+}
+
+.top-stories-bar {
+    height: 400px;
+    width: 20%;
+    float: right;
+    margin: 5px 0 0 0;
+}
+
+.top-stories-bar h1 {
+    font-weight: bold;
+    padding: 5px 0 0 5px;
+}
+
+.top-stories-bar hr {
+    border: .5px solid black;
+    width: 50%;
+    text-align: left;
+    margin-left: 0px;
+}
+
+#title-line {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.top-stories-bar p {
+    padding: 5px 0 0 5px;
+    line-height: 30px;
+}
+
+.story-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5em;
+    padding: 0 10px 0 10px;
+}
+
+.story-blurb {
+    font-family: 'Open Sans', sans-serif;
+    opacity: 70%;
+    padding: 0 10px 0 10px;
+}
+
+.story-tag-box {
+    margin: 0 10px 0 10px;
+    border: 1px solid gray;
+    width: min-content;
+    background-color: gray;
+    text-align: center;
+    padding: 3px 3px 3px 3px;
+}
+
+/* For the footer I'm making this page desktop-first and making it not display at any size larger than mobile */
+/* I'm going to be styling the footer in my media queries */
+
+footer {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    
+    .top-stories-bar {
+        display: none;
+    }
+
+    .story-box {
+        width: 80%;
+    }
+    .story-image {
+        width: 100%;
+    }   
+}
+
+@media (max-width: 576px) {
+
+    .top-stories-bar {
+        display: none;
+    }
+
+    .story-box {
+        width: 100%;
+    }
+
+    .story-image {
+        width: 100%;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50px 200px;
+        background-color:  #C8102E;
+    }
+    .container hr {
+        width: 50%;
+        text-align: left;
+        margin-left: 0px;
+    }
+    
+    .footer-title-left {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
 }
