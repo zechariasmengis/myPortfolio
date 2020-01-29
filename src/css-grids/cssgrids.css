@@ -1,7 +1,30 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #C8102E;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #00B2A9;
+}
+
 main.main-container {
     display: grid;
-    border: 1px solid black;
-    background-color: green;
+    background-color: #dddddd;
     height: 1500px;
     grid-template-columns: 15% repeat(3, 1fr);
     grid-template-rows: 60px 60px 1fr 2fr 1fr;
@@ -10,63 +33,162 @@ main.main-container {
 .nav {
     grid-column: 2/5;
     grid-row: 1/2;
-    background: black;
+    background: rgb(228, 212, 197);
 }
 
 .aside {
     grid-column: 1/2;
     grid-row: 1/6;
-    background: orange;
+    background: #aaaaaa;
+    /* box-shadow: 5px 0  grey; */
 }
 
 .top {
     grid-column: 2/4;
     grid-row: 2/3;
-    background-color: orangered;
+    background-color: #dddddd;
+    margin: 0 0 0 5px;
+    padding: 22px 0 5px 10px;
+}
+
+hr {
+    margin-left: 0px;
+    width: 20%;
+    text-align: left;
+}
+
+.title {
+    font-family: 'Monda', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+
 }
 
 .search {
-    
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-color: #dddddd;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.search-button {
+    grid-column: 1/2;
+}
+
+.search-login {
+    grid-column: 2/3;
+    /* padding: 10px 10px 10px 10px; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    width: 60%;
+    margin: 10px;
+    background: FF;
 }
 
 .greeting {
     grid-column: 2/3;
     grid-row: 3/4;
     background: white;
+    margin: 10px 5px 10px 10px;
+    box-shadow: 0px 5px  grey;
+    transition: all .1s ease-in-out;
+}
+
+.greeting:hover {
+      transform: scale(1.025);
 }
 
 .date {
     grid-column: 3/4;
     grid-row: 3/4;
-    background: purple;
+    background: white;
+    margin: 10px 5px 10px 5px;
+    box-shadow: 0px 5px  grey;
+    transition: all .1s ease-in-out;
+}
+
+.date:hover {
+    transform: scale(1.025);
 }
 
 .liverpool {
     grid-column: 4/5;
     grid-row: 3/4;
-    background: blue;
+    background: white;
+    margin: 10px 10px 10px 5px;
+    box-shadow: 0px 5px  grey;
+    transition: all .1s ease-in-out;
+}
+
+.liverpool:hover {
+    transform: scale(1.025);
 }
 
 .graph {
     grid-column: 2/4;
     grid-row: 4/5;
-    background: aqua;
+    background: white;
+    margin: 10px 5px 10px 10px;
+    box-shadow: 0px 5px  grey;
+    transition: all .1s ease-in-out;
+}
+
+.graph:hover {
+    transform: scale(1.01);
 }
 
 .calc {
     grid-column: 4/5;
     grid-row: 4/5;
-    background: yellow;
+    background: white;
+    margin: 10px 10px 10px 5px;
+    box-shadow: 0px 5px  grey;
+    transition: all .1s ease-in-out;
+}
+
+.calc:hover {
+    transform: scale(1.01);
 }
 
 .video {
     grid-column: 2/3;
     grid-row: 5/6;
-    background: red;
+    background: white;
+    box-shadow: 0px 5px  grey;
+    transition: all .1s ease-in-out;
+    margin: 10px 5px 10px 10px;
+}
+
+.video:hover {
+    transform: scale(1.01);
 }
 
 .widget {
     grid-column: 3/5;
     grid-row: 5/6;
-    background: gray;
+    background: white;
+    margin: 10px 10px 10px 5px;
+    box-shadow: 0px 5px  grey;
+    transition: all .1s ease-in-out;
+}
+
+.widget:hover {
+    transform: scale(1.01);
+}
+
+@media (max-width: 568px) {
+    
+    main.main-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 60px ;
+    }
+
+    .aside {
+        display: none;
+    }
 }
