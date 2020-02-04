@@ -98,10 +98,49 @@ button {
     margin: 10px 5px 10px 10px;
 }
 
+.module.greeting h1 {
+    padding: 10px 10px 0 10px;
+    font-size: 1.5em;
+}
+
 .date {
     grid-column: 3/4;
     grid-row: 3/4;
     margin: 10px 5px 10px 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 30px 1fr);
+    border:1px solid black;
+}
+
+.date-header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    border:1px solid black;
+}
+
+.time-header {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    border:1px solid black;
+}
+
+.date-numbers {
+    text-align: center;
+    padding: 30px 0 30px 0;
+    font-size: 3em;
+    border: .5px dotted #cccccc;
+}
+
+.time-numbers {
+    text-align: center;
+    padding: 30px 0 30px 0;
+    font-size: 3em;
+    border: .5px dotted #cccccc;
 }
 
 .liverpool {
@@ -110,16 +149,45 @@ button {
     margin: 10px 10px 10px 5px;
 }
 
-.graph {
+.module.graph {
     grid-column: 2/4;
     grid-row: 4/5;
     margin: 10px 5px 10px 10px;
+    background-image: url(/cool-graph.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .calc {
     grid-column: 4/5;
     grid-row: 4/5;
     margin: 10px 10px 10px 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.calc-screen {
+    grid-column: 1/5;
+    grid-row: 1/3;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    padding: 70px 0 70px 0;
+}
+
+.calc-buttons {
+    text-align: center;
+    align-items: center;
+    background-color: #cccccc;
+    padding: 35px 0 35px 0;
+    border: .5px solid black;
+}
+
+.zero-button {
+    grid-column: 1/3;
 }
 
 .video {
