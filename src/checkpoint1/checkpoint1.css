@@ -26,23 +26,72 @@ main.main-container {
     display: grid;
     background-color: #dddddd;
     height: 1500px;
-    grid-template-columns: 15% repeat(3, 1fr);
+    grid-template-columns: 180px repeat(3, 1fr);
     grid-template-rows: 60px 60px 1fr 2fr 1fr;
+    padding: 0;
+    margin: 0;
 }
 
 .nav {
     grid-column: 2/5;
     grid-row: 1/2;
-    background: rgb(228, 212, 197);
+    background: #eeeeee;
     display: grid;
-    grid-template-columns: 40px 40px 40px 1fr 40px;
+    grid-template-columns: 40px 40px 40px 1fr 50px;
+    padding: 0;
+}
+
+.notif-icon {
+    margin: 10px;
+}
+
+.notif-icon-bell {
+    background-image: url(./checkpoint1-images/bell-icon.png);
+    background-position: center;
+    background-size: 3ch;
+    background-repeat: no-repeat;
+}
+
+.notif-icon-mail {
+    background-image: url(./checkpoint1-images/mail-icon.png);
+    background-position: center;
+    background-size: 3ch;
+    background-repeat: no-repeat;
+}
+
+.notif-icon-gear {
+    background-image: url(./checkpoint1-images/gear-icon.png);
+    background-position: center;
+    background-size: 3ch;
+    background-repeat: no-repeat;
+}
+
+#notif-icon-search {
+    padding: 10px 20px 0 0;
+    background-image: url(./checkpoint1-images/search-icon.png);
+    background-position: center;
+    background-size: 3ch;
+    background-repeat: no-repeat;
 }
 
 .aside {
     grid-column: 1/2;
     grid-row: 1/6;
-    background: #aaaaaa;
-    /* box-shadow: 5px 0  grey; */
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 60px) auto 60px;
+}
+
+#aside-title {
+    background-color: rgb(25, 25, 154);
+    color: white;
+    padding: 20px 0 0 20px;
+}
+
+.aside-bars {
+    padding: 25px 0 0 20px;
+    border-bottom: 1px solid gray;
 }
 
 .top {
@@ -89,7 +138,6 @@ button {
     width: 60%;
     margin: 10px;
     background: FF;
-    flex-direction: ;
 }
 
 .greeting {
@@ -100,6 +148,41 @@ button {
 
 .module.greeting {
     background-image: url(./checkpoint1-images/tesla-graph.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.module.date {
+    background-image: url(./checkpoint1-images/pie-chart.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.module.liverpool {
+    background-image: url(./checkpoint1-images/venn-diagram.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.module.graph {
+    background-image: url(./checkpoint1-images/tesla-sales.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.module.calc {
+    background-image: url(./checkpoint1-images/boys-height.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.module.video {
+    background-image: url(./checkpoint1-images/canada-temp.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
