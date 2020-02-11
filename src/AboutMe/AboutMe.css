@@ -23,7 +23,7 @@ ul {
   }
   
   .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../360-overlook.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/360-overlook.jpg");
     height: 115%;
     background-position:bottom;
     background-repeat: no-repeat;
