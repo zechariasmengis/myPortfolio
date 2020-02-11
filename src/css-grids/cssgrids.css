@@ -1,4 +1,4 @@
-ul {
+nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -41,8 +41,13 @@ main.main-container {
 .aside {
     grid-column: 1/2;
     grid-row: 1/6;
-    background: #aaaaaa;
-    /* box-shadow: 5px 0  grey; */
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside ul li {
+
 }
 
 .top {

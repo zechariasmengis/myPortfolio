@@ -1,0 +1,33 @@
+.hero {
+    background-image: url("space.jpg");
+    height: 550px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    font-size: 4em;
+}
+
+.flex-container {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #cccccc;
+}
+
+.flex-container div {
+    margin: 0 30px 30px 30px;
+    min-width: 200px;
+}
+
+h1 {
+    font-size: 2em;
+}
