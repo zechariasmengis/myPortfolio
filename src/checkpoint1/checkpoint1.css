@@ -1,0 +1,401 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #C8102E;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #00B2A9;
+}
+
+main.main-container {
+    display: grid;
+    background-color: #dddddd;
+    height: 1500px;
+    grid-template-columns: 180px repeat(3, 1fr);
+    grid-template-rows: 60px 60px 1fr 2fr 1fr;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    grid-column: 2/5;
+    grid-row: 1/2;
+    background: #eeeeee;
+    display: grid;
+    grid-template-columns: 40px 40px 40px 1fr 50px;
+    padding: 0;
+}
+
+.notif-icon {
+    margin: 10px;
+}
+
+.notif-icon-bell {
+    background-image: url(./checkpoint1-images/bell-icon.png);
+    background-position: center;
+    background-size: 3ch;
+    background-repeat: no-repeat;
+}
+
+.notif-icon-mail {
+    background-image: url(./checkpoint1-images/mail-icon.png);
+    background-position: center;
+    background-size: 3ch;
+    background-repeat: no-repeat;
+}
+
+.notif-icon-gear {
+    background-image: url(./checkpoint1-images/gear-icon.png);
+    background-position: center;
+    background-size: 3ch;
+    background-repeat: no-repeat;
+}
+
+#notif-icon-search {
+    padding: 10px 20px 0 0;
+    background-image: url(./checkpoint1-images/search-icon.png);
+    background-position: center;
+    background-size: 3ch;
+    background-repeat: no-repeat;
+}
+
+.aside {
+    grid-column: 1/2;
+    grid-row: 1/6;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 60px) auto 60px;
+}
+
+#aside-title {
+    background-color: rgb(25, 25, 154);
+    color: white;
+    padding: 20px 0 0 20px;
+}
+
+.aside-bars {
+    padding: 25px 0 0 20px;
+    border-bottom: 1px solid gray;
+}
+
+.top {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: #dddddd;
+    margin: 0 0 0 5px;
+    padding: 22px 0 5px 10px;
+}
+
+hr {
+    margin-left: 0px;
+    width: 20%;
+    text-align: left;
+}
+
+.title {
+    font-family: 'Monda', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.search {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-color: #dddddd;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.search-button {
+    grid-column: 1/2;
+}
+
+.search-login {
+    grid-column: 2/3;
+    /* padding: 10px 10px 10px 10px; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    width: 60%;
+    margin: 10px;
+    background: FF;
+}
+
+.greeting {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: 10px 5px 10px 10px;
+}
+
+.module.greeting {
+    background-image: url(./checkpoint1-images/tesla-graph.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.module.date {
+    background-image: url(./checkpoint1-images/pie-chart.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.module.liverpool {
+    background-image: url(./checkpoint1-images/venn-diagram.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.module.graph {
+    background-image: url(./checkpoint1-images/tesla-sales.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.module.calc {
+    background-image: url(./checkpoint1-images/boys-height.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.module.video {
+    background-image: url(./checkpoint1-images/canada-temp.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.date {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    margin: 10px 5px 10px 5px;
+}
+
+.liverpool {
+    grid-column: 4/5;
+    grid-row: 3/4;
+    margin: 10px 10px 10px 5px;
+}
+
+.graph {
+    grid-column: 2/4;
+    grid-row: 4/5;
+    margin: 10px 5px 10px 10px;
+}
+
+.calc {
+    grid-column: 4/5;
+    grid-row: 4/5;
+    margin: 10px 10px 10px 5px;
+}
+
+.video {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin: 10px 5px 10px 10px;
+}
+
+.widget {
+    grid-column: 3/5;
+    grid-row: 5/6;
+    margin: 10px 10px 10px 5px;
+}
+
+.module {
+    background: white;
+    box-shadow: 0px 5px 10px grey;
+    transition: all .1s ease-in-out;
+}
+
+.module:hover  {
+    transform: scale(1.01);
+}
+
+@media (max-width: 850px) {
+
+    main.main-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 60px 60px 500px 500px 500px 1000px;
+    }
+
+    .aside {
+        display: none;
+    }
+
+    .nav {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .top {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .search {
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+    }
+
+    .greeting {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 10px 5px 5px 10px;
+    }
+
+    .date {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin: 10px 10px 5px 5px;
+    }
+
+    .liverpool {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin: 5px 5px 5px 10px;
+    }
+
+    .video {
+        grid-column: 2/3;
+        grid-row: 4/5;
+        margin: 5px 10px 5px 5px;
+    }
+
+    .graph {
+        grid-column: 1/3;
+        grid-row: 5/6;
+        margin: 5px 10px 5px 10px;
+    }
+
+    .calc {
+        grid-column: 1/2;
+        grid-row: 6/7;
+        margin: 5px 5px 5px 10px;
+    }
+
+    .widget {
+        grid-column: 2/3;
+        grid-row: 6/7;
+        margin: 5px 10px 5px 5px;
+    }
+
+
+}
+
+@media (max-width: 568px) {
+    
+    main.main-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 60px 60px repeat(5, 500px) repeat(2, 1000px);
+    }
+
+    .aside {
+        display: none;
+    }
+
+    .nav {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .top {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 0 15px 0 5px;
+    }
+
+    .top hr {
+        display: none;
+    }
+
+    .top h1 {
+        text-align: center;
+    }
+
+    .search {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        justify-content: center;
+    }
+
+    .greeting {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin: 10px 10px 5px 10px;
+    }
+
+    .date {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        margin: 5px 10px 5px 10px;
+    }
+
+    .liverpool {
+        grid-column: 1/2;
+        grid-row: 6/7;
+        margin: 5px 10px 5px 10px;
+    }
+
+    .video {
+        grid-column: 1/2;
+        grid-row: 7/8;
+        margin: 5px 10px 5px 10px;
+    }
+
+    .graph {
+        grid-column: 1/2;
+        grid-row: 8/9;
+        margin: 5px 10px 5px 10px;
+    }
+
+    .calc {
+        grid-column: 1/2;
+        grid-row: 9/10;
+        margin: 5px 10px 5px 10px;
+    }
+
+    .widget {
+        grid-column: 1/2;
+        grid-row: 10/11;
+        margin: 5px 10px 5px 10px;
+    }
+
+    .search-button {
+        display: none;
+    }
+
+    .search-login {
+        grid-column: 1/3;
+    }
+
+    button {
+        width: 30%;
+        margin: 10px;
+        align-items: center;
+    }
+}
