@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../reset.css">
+  <link rel="stylesheet" href="./rebuild.css">
+  <title>Portfolio Rebuild</title>
+</head>
+<body>
+  <header>This is my banner!</header>
+  <main class="container">
+    <div class="video-embed">
+        <div class="iframe-wrap">
+          <iframe width="510" height="315" class="thevid" src="https://www.youtube.com/embed/4NhlXGMDNq4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="video-frame">
+        <video controls width="500">
+            <source src="./trent-vid.mp4"
+                    type="video/mp4" />
+        </video>
+    </div>
+    <div class="signup">
+      <div class="signup-title">
+        Sign Up Below!
+      </div>
+      <div class="form-container">
+        <form>
+          <input type="text" name="fn" id="fn" placeholder="First Name" required />
+          <input type="text" name="ln" id="ln" placeholder="Last Name" required /> <br>
+          <input type="location" name="ln" id="ln" placeholder="Location" required /> <br>
+          <input type="email" name="email" id="email" placeholder="Email" required /> <br>
+          <input type="submit" value="Submit" />  
+          <input type="reset" value="Reset" />
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
