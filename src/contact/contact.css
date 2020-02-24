@@ -203,6 +203,16 @@ input {
 }
 
 /*leftToRight Animation*/
+@keyframes leftToRight{
+	0% { opacity: 0; }
+	5% { opacity: 0; transform: translateX(-50px); }
+	10% { opacity: 1; transform: translateX(0px); }
+	25% { opacity: 1; transform: translateX(0px); }
+	30% { opacity: 0; transform: translateX(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
 @-moz-keyframes leftToRight{
 	0% { opacity: 0; }
 	5% { opacity: 0; -moz-transform: translateX(-50px); }
