@@ -1,0 +1,56 @@
+header {
+  box-sizing: border-box;
+  width: 100%;
+  height: 80px;
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 500px);
+}
+
+.video-embed {
+  grid-template-rows: 1/2;
+  background-color: violet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-frame {
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.signup {
+  background-color: springgreen;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 350px;
+}
+
+.signup-title {
+  text-align: center;
+  padding: 50px 0 0 0;
+  font-size: 2em;
+}
+
+.form-container {
+  text-align: center;
+}
+
+form input {
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+
+  margin: 10px 10px;
+}
