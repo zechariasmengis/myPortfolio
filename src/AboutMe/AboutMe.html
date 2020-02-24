@@ -1,47 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="AboutMe.css">
-    <title>About Me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300|Roboto:300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../reset.css">
+  <link rel="stylesheet" href="./AboutMe.css">
+  <title>About Me</title>
 </head>
 <body>
-  <ul>
-    <li><a href="../../index.html" >Home</a></li>
-    <li><a class="#Resume" href="../Resume/resume.html"> Resume</a></li>
-    <li><a href="../blog/blog.html">Blog</a></li>
-    <li><a href="../css-grids/cssgrids.html">Dashboard</a></li>
-    <li style="float:right"><a href="mailto:zmengis@gmail.com" target="_blank">Contact</a></li>
-  </ul>
-  <main>
-    <div class="intro">
-      <div class="name-letters special-e">
-        <span>E</span>
+  <!-- Outter Wrapper Start-->
+  <div class="wrapper">
+    <header>
+      <nav id="navbar">
+        <a href=""><p>Contact</p></a>
+        <a href=""><p>About Me</p></a>
+        <a href=""><p>Home</p></a>
+        <a href=""><p>Blog</p></a>
+        <a href=""><p>My Stuff</p></a>
+      </nav>
+    </header>
+    <div class="about-block hero">
+      <div class="shell">
+          <h1>Get to Know <strong>Zech</strong></h1>
+          <div class="qualities">
+            <h2 class="sentence">I am
+              <div class="slidingHorizontal">
+                <span>a son, a brother, and a friend.</span>
+                <span>a soccer fan.</span>
+                <span>a traveler and foodie.</span>
+                <span>a vegetarian.</span>
+                <span>an intellectual.</span>
+              </div>
+            </h2>
+            <h2 class="sentence">I love
+              <div class="slidingHorizontal">
+                <span>my family and friends.</span>
+                <span>Liverpool Football Club.</span>
+                <span>the feeling of being in a new city.</span>
+                <span>taking care of our planet.</span>
+                <span>learning, struggling, and growing.</span>
+              </div>
+            </h2>
+            <h2 class="sentence">I value
+                <div class="slidingHorizontal">
+                  <span>loyalty.</span>
+                  <span>passion.</span>
+                  <span>culture.</span>
+                  <span>mindfulness.</span>
+                  <span>progress.</span>
+                </div>
+              </h2>
+          </div>
+          <div class="button-container">
+            <button class="connect-button">Learn About Me</button>
+          </div>
       </div>
-      <div class="name-letters special-z">Z</div>
-      <div class="first-name slidingHorizontal">
-              <span>MPATHETIC</span>
-              <span>THIOPIAN</span>
-              <span>VERYBODY IN THE CLUB GETTIN' TIPSY</span>
-              <span>NGINEER</span>
-              <span id="NAME">CHARIAS.</span>
-      </div>
-
-      <div class="name-letters special-m">M</div>
-      <div class="name-letters last-n">N</div>
-      <div class="name-letters last-g">G</div>
-      <div class="name-letters last-i">I</div>
-      <div class="name-letters last-s">S</div>
     </div>
-  </main>
-  <div class="footer">
-    <p>Footer</p>
+    <div class="about-block about-things">
+        <div class="shell">
+            <h1>Some Things About Me</h1>
+            <ul>
+              <li><h2>I love soccer</h2></li>
+              <li><h2>I love to travel</h2></li>
+              <li><h2>I'm a vegetarian for environmental and ethical reasons</h2></li>
+              <li><h2>I love to read and write</h2></li>
+              <li><h2>I love to learn new things</h2></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+      <div></div>
+      <div class="footer-column f-projects">
+        <h3 class="footer-header">Projects</h3>
+        <hr>
+        <a href=""><p></p></a>
+      </div>
+      <div class="footer-column f-social">
+          <h3 class="footer-header">Social</h3>
+          <hr>
+      </div>
+      <div class="footer-column f-links">
+          <h3 class="footer-header">Links</h3>
+          <hr>
+      </div>
+      <div></div>
+    </footer>
   </div>
-</body>
-</html>  
+  <!-- Outter Wrapper End-->
+  <script src="contact.js"></script>
 </body>
 </html>
